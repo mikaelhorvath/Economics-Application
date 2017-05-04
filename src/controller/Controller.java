@@ -10,6 +10,7 @@ import objects.DBObj;
 public class Controller {
     private MainWindow gui;
     private DBObj dbO;
+    private AWSController aCont;
 
     /**
      * Constructor recieves gui class
@@ -27,8 +28,17 @@ public class Controller {
      * @param date = Date of entry
      * @param sum = Expenses
      */
-    public void handleInput(String name, String desc, String email, String date, String sum){
+    public void handleInput(String name, String desc, String email, String date, String sum) {
         int s = Integer.parseInt(sum);
         dbO = new DBObj(name, desc, email, date, s);
+        sendToDB();
+    }
+
+    /**
+     * Sends the DBObj to AWS to work with the database
+     */
+    private void sendToDB(){
+        AWSController a = new AWSController(dbO);
+        a.setController(this); // Setting this controller to AWSController
     }
 }

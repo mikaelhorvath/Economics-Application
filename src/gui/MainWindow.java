@@ -92,11 +92,16 @@ public class MainWindow extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == regBtn){
             // Sends the input from the user to controller for further work
-            c.handleInput(nameTxt.getText(), descTxt.getText(), emailTxt.getText(), getDate(), sumTxt.getText());
+            if(nameTxt.getText().length() == 0 || descTxt.getText().length() == 0
+                    || emailTxt.getText().length() == 0 || sumTxt.getText().length() == 00){
+                JOptionPane.showMessageDialog(null, "You must fill out the form!");
+            }else{
+                c.handleInput(nameTxt.getText(), descTxt.getText(), emailTxt.getText(), getDate(), sumTxt.getText());
+            }
         }
 
         if(e.getSource() == repBtn){
-            // Opens report window
+            ReportWindow r = new ReportWindow(); // Should be changed so controller recieves this input
         }
     }
 
