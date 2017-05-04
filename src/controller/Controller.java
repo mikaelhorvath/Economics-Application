@@ -1,6 +1,7 @@
 package controller;
 
 import gui.MainWindow;
+import gui.ReportWindow;
 import objects.DBObj;
 
 /**
@@ -10,14 +11,15 @@ import objects.DBObj;
 public class Controller {
     private MainWindow gui;
     private DBObj dbO;
-    private AWSController aCont;
+    private ReportWindow rw;
 
     /**
      * Constructor recieves gui class
      * @param gui = MainWindow gui
      */
-    public Controller(MainWindow gui){
+    public Controller(MainWindow gui, ReportWindow r){
         this.gui = gui;
+        this.rw = r;
     }
 
     /**

@@ -11,10 +11,9 @@ public class ReportWindow extends JPanel {
     public ReportWindow(){
         setLayout(null);
         setPreferredSize(new Dimension(350, 350));
-        setFrame();
     }
 
-    private void setFrame(){
+    public void setFrame(){
         JFrame f = new JFrame();
         f.add(this);
         f.pack();

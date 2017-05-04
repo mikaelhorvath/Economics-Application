@@ -19,6 +19,7 @@ public class MainWindow extends JPanel implements ActionListener {
     private JTextField nameTxt, descTxt, sumTxt, emailTxt;
     private JButton regBtn = new JButton("Register entry!");
     private JButton repBtn = new JButton("Open report window!");
+    private ReportWindow r;
     private Controller c;
     /**
      * Constructor
@@ -81,7 +82,8 @@ public class MainWindow extends JPanel implements ActionListener {
     }
 
     private void setController(){
-        c = new Controller(this);
+        r = new ReportWindow();
+        c = new Controller(this, r);
     }
 
     /**
@@ -101,7 +103,7 @@ public class MainWindow extends JPanel implements ActionListener {
         }
 
         if(e.getSource() == repBtn){
-            ReportWindow r = new ReportWindow(); // Should be changed so controller recieves this input
+            r.setFrame();
         }
     }
 
