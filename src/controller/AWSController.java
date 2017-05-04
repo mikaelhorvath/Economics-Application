@@ -13,7 +13,6 @@ public class AWSController {
     public AWSController(DBObj d){
         this.dbO = d;
     }
-
     /**
      * Sets Controller class
      * @param cont = Controller.java
