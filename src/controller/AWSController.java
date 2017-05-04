@@ -12,11 +12,6 @@ public class AWSController {
 
     public AWSController(DBObj d){
         this.dbO = d;
-        printInfo();
-    }
-
-    private void printInfo(){
-        System.out.println("AWS:"+" "+dbO.getEmail());
     }
 
     /**
