@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8298021e-992d-4ea4-aedd-4fcf5808645d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_41_bin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EconApp/controller/AWSController.class" afterPath="$PROJECT_DIR$/out/production/EconApp/controller/AWSController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EconApp/controller/Controller.class" afterPath="$PROJECT_DIR$/out/production/EconApp/controller/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EconApp/gui/MainWindow.class" afterPath="$PROJECT_DIR$/out/production/EconApp/gui/MainWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EconApp/gui/ReportWindow.class" afterPath="$PROJECT_DIR$/out/production/EconApp/gui/ReportWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/EconApp/objects/DBObj.class" afterPath="$PROJECT_DIR$/out/production/EconApp/objects/DBObj.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EconApp.iml" afterPath="$PROJECT_DIR$/EconApp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/AWSController.java" afterPath="$PROJECT_DIR$/src/controller/AWSController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/objects/DBObj.java" afterPath="$PROJECT_DIR$/src/objects/DBObj.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,11 +55,11 @@
       <file leaf-file-name="AWSController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/AWSController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            <state relative-caret-position="300">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
-                <element signature="e#270#271#0" expanded="true" />
-                <element signature="e#298#299#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <marker date="1493986699000" expanded="true" signature="1702:1807" ph="INSERT INTO `Expenses`... " />
               </folding>
             </state>
           </provider>
@@ -113,8 +105,8 @@
         <option value="$PROJECT_DIR$/src/gui/ReportWindow.java" />
         <option value="$PROJECT_DIR$/src/gui/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/objects/DBObj.java" />
-        <option value="$PROJECT_DIR$/src/controller/AWSController.java" />
         <option value="$PROJECT_DIR$/src/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/controller/AWSController.java" />
       </list>
     </option>
   </component>
@@ -689,7 +681,7 @@
       <updated>1493895195118</updated>
       <workItem from="1493895198516" duration="9030000" />
       <workItem from="1493928910972" duration="69000" />
-      <workItem from="1493981515130" duration="853000" />
+      <workItem from="1493981515130" duration="2580000" />
     </task>
     <task id="LOCAL-00001" summary="Removed a method">
       <created>1493912021857</created>
@@ -712,11 +704,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493923388517</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="DB Updates">
+      <created>1493983313994</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1493983313994</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9952000" />
+    <option name="totallyTimeSpent" value="11679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="710" extended-state="0" />
@@ -762,7 +761,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Removed a method" />
     <MESSAGE value="Added new methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new methods" />
+    <MESSAGE value="DB Updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="DB Updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -808,8 +808,8 @@
         <state relative-caret-position="255">
           <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
           <folding>
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1493986699000" expanded="true" signature="1702:1807" ph="INSERT INTO `Expenses`... " />
           </folding>
         </state>
       </provider>
@@ -857,8 +857,8 @@
         <state relative-caret-position="255">
           <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
           <folding>
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1493986699000" expanded="true" signature="1702:1807" ph="INSERT INTO `Expenses`... " />
           </folding>
         </state>
       </provider>
@@ -920,11 +920,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/AWSController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        <state relative-caret-position="300">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1493986699000" expanded="true" signature="1702:1807" ph="INSERT INTO `Expenses`... " />
           </folding>
         </state>
       </provider>
