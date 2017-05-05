@@ -113,6 +113,7 @@ public class MainWindow extends JPanel implements ActionListener {
         f.add(w);
         f.setTitle("Economics 1.0");
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.setResizable(false);
         f.pack();
         f.setVisible(true);
     }

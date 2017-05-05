@@ -4,6 +4,8 @@ import gui.MainWindow;
 import gui.ReportWindow;
 import objects.DBObj;
 
+import java.util.ArrayList;
+
 /**
  * Class handles the input of the user and sends it to AWSController for further work with the data
  * Created by mikaelhorvath on 2017-05-04.
@@ -12,6 +14,8 @@ public class Controller {
     private MainWindow gui;
     private DBObj dbO;
     private ReportWindow rw;
+    private AWSController a;
+    private ArrayList<DBObj> arrList = new ArrayList<DBObj>();
 
     /**
      * Constructor recieves gui class
@@ -20,6 +24,9 @@ public class Controller {
     public Controller(MainWindow gui, ReportWindow r){
         this.gui = gui;
         this.rw = r;
+        a = new AWSController();
+        a.setController(this);
+        a.downloadFromAWS();
     }
 
     /**
@@ -40,7 +47,15 @@ public class Controller {
      * Sends the DBObj to AWS to work with the database
      */
     private void sendToDB(){
-        AWSController a = new AWSController(dbO);
-        a.setController(this); // Setting this controller to AWSController
+        a.setDBObj(dbO);
+    }
+
+    /**
+     * Fetches new data
+     * @param arr = ArrayList
+     */
+    public void recieveFromAWSController(ArrayList<DBObj> arr){
+        this.arrList = arr;
+        rw.populateArray(arrList);
     }
 }
