@@ -28,11 +28,18 @@ public class AWSController {
         loadDBModule();
     }
 
+    /**
+     * Setting the object and calling the upload method
+     * @param o = object
+     */
     public void setDBObj(DBObj o){
         this.dbO = o;
         uploadToAWS();
     }
 
+    /**
+     * Loading database module
+     */
     private void loadDBModule(){
         try {
             System.out.println("Loading driver...");
@@ -59,13 +66,13 @@ public class AWSController {
             String descr = dbO.getDesc();
             String emailz = dbO.getEmail();
             int sumz = dbO.getSum();
-            // Not working just yet!
             stmt.executeUpdate("INSERT INTO `Expenses`(Namn,Description,Mejl,Summa) VALUE ('"+namez+"','"+descr+"','"+emailz+"',"+sumz+")");
             stmt.close();
             connection.close();
         } catch (SQLException e) {
             throw new RuntimeException("Cannot connect the database!", e);
         }
+        downloadFromAWS();
     }
 
     /**
@@ -93,15 +100,24 @@ public class AWSController {
             }
             stmt.close();
             connection.close();
+            arr.clear();
         } catch (SQLException e) {
             throw new RuntimeException("Cannot connect the database!", e);
         }
     }
 
+    /**
+     * Returns current date
+     * @return
+     */
     private String getDate(){
         return new SimpleDateFormat("yyyy - MM - dd").format(Calendar.getInstance().getTime());
     }
 
+    /**
+     * Sends back the list to controller
+     * @param arrayList = list of data
+     */
     private void sendBackToController(ArrayList<DBObj> arrayList){
         c.recieveFromAWSController(arrayList);
     }

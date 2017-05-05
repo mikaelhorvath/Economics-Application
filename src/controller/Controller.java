@@ -15,7 +15,6 @@ public class Controller {
     private DBObj dbO;
     private ReportWindow rw;
     private AWSController a;
-    private ArrayList<DBObj> arrList = new ArrayList<DBObj>();
 
     /**
      * Constructor recieves gui class
@@ -55,7 +54,6 @@ public class Controller {
      * @param arr = ArrayList
      */
     public void recieveFromAWSController(ArrayList<DBObj> arr){
-        this.arrList = arr;
-        rw.populateArray(arrList);
+        rw.populateArray(arr);
     }
 }
