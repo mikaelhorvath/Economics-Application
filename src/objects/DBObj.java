@@ -63,4 +63,8 @@ public class DBObj {
     public int getSum(){
         return this.sum;
     }
+
+    public String toString(){
+        return this.date+": "+this.name + " " +"-"+" "+this.desc+" "+"-"+" "+this.sum+" "+"SEK";
+    }
 }
